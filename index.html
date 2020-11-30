@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+    <link rel="stylesheet" href="/main.css">
+</head>
+<body>
+    <main>
+        <div class="yellow-line"></div>
+        <div class="main">
+            <h1>To-Do List</h1>
+            <div>
+                <button class="sort">
+                        <img src="./img/sort-up.svg" class="sort-up" alt="sort-up">
+                        <img src="./img/sort-down.svg" class="sort-down sorting" alt="sort-down">
+                </button>
+            </div>
+            <div class="option-list">
+                <div class="option" draggable="true">
+                    <div class="option__dots">
+                        <img src="./img/four-points.svg" draggable="false" class="four-points" alt="four-points">
+                    </div>
+                    <input type="text" class="option__list-item">
+                    <button type="button" class="option__delete">
+                        <img src="./img/passive-x.svg" class="option__diag1" draggable="false" alt="passive-x">
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="add"><span class="plus">+</span>Добавить</button>
+        </div>
+    </main>
+    <script src="./script.js"></script>
+</body>
+</html>
